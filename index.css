@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;  /* Make header transparent initially */
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+header.scrolled {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+header .chose-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: auto;  /* This line pushes the chose-header to the right */
+}
+
+header .chose-header > div {
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header .chose-header > div:hover {
+    color: #666;
+}
+
+.home_section {
+    text-align: center;
+    height: 600px;
+    background-image: url("https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_section > div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.home_section div {
+    margin-bottom: 20px;
+}
+
+.home_section button {
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    height: 40px;
+    background-color: orange;
+    cursor: pointer;
+    border: none;
+    padding: 0 20px;
+    font-size: 14px;
+    display: inline-block;
+    color: white;
+}
+
+.home_section button:hover {
+    background-color: #ddd;
+}
+
+.about_me_section , .overall_experiences_section, .project_section, .contact_section {
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about_me_section {
+    border-bottom: 1px solid black;
+}
+
+.about_me_section > div {
+    margin: 20px 0;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.about_me_section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skill_information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.skill_information i {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.skill_information span {
+    font-size: 1.2rem;
+}
+
+.overall_experiences_section {
+    border-bottom: 1px solid black;
+}
+
+.project_section {
+    border-bottom: 1px solid black;
+}
+
+.contact_section {
+    border-bottom: 1px solid black;
+}
